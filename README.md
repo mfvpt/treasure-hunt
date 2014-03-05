@@ -10,3 +10,9 @@ JavaScript Framework:
 
 
 Phaser is released under the [MIT License](http://opensource.org/licenses/MIT).
+
+
+
+Tiled Map Editor:
+-----------------
+Maps were designed using the free, easy to use and flexible [Tiled Map Editor](http://www.mapeditor.org/).
