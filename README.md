@@ -21,7 +21,10 @@ Maps were designed using the free, easy to use and flexible [Tiled Map Editor](h
 Images:
 -----------------
 All graphics are designed by Daniel Cook (Lostgarden.com)
+
+
 Items use the Creative Commons Attribution 3.0 License.
+
 
 Homepage background:
 [Map of Treasure Island](http://en.wikipedia.org/wiki/File:Treasure-island-map.jpg) from the 1883 edition by Cassel
