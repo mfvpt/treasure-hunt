@@ -26,6 +26,9 @@ All graphics are designed by Daniel Cook (Lostgarden.com)
 Items use the Creative Commons Attribution 3.0 License.
 
 
+Game Canvas background:
+Source: [Wallpaper Hi Site](http://www.wallpaperhi.com/).
+
 Homepage background:
 [Map of Treasure Island](http://en.wikipedia.org/wiki/File:Treasure-island-map.jpg) from the 1883 edition by Cassel
 Original source: [Beidecke Library](http://brbl-dl.library.yale.edu/vufind/Record/3522527) 
