@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>MOSS - Treasure Hunt Game</title>
+        <script src="js/phaser.min.js"></script>
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/moss.css">
+    </head>
+    <body>
+		<div class="container">
+			<!--Cabeçalho-->
+			<div class="title">
+				<span id="title" class="main-title"></span>
+				MOSS - Treasure Hunt Game
+			</div>
+			<div class="name">			
+				DAW - Marco Vicente - <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Instructions</a>
+			</div>
+			<!--Jogo-->
+			<script src="js/moss.treasure.hunt.js"></script>
+			<div id="gameDiv" class="game"/>		
+		</div>
+		<div id="light" class="instructions_content">
+			<h1>MOSS - Treasure Hunt Game</h1>
+			<p>Catch all the stars as fast as you can. Controls:</p>
+			<p><img src="images/moss-controls100x100.png"></p>
+			<p><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>	</p>
+		</div>
+		<div id="fade" class="fade_overlay"></div>
+    </body>
+</html>
