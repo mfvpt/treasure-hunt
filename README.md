@@ -4,12 +4,19 @@ MOSS Treasure Hunt
 Treasure Hunt Game using HTML + CSS + JavaScript
 
 
+A simple game that explores the capabilities of HTML5 combined with JavaScript.
+The goal is to catch all the MOSS coins fast as you can.
+
+
 JavaScript Framework:
 -----------------
 [Phaser](http://phaser.io/). A fast, free and fun open source game framework for making desktop and mobile browser HTML5 games. It uses [Pixi.js](https://github.com/GoodBoyDigital/pixi.js/) internally for fast 2D Canvas and WebGL rendering.
 
 
 Phaser is released under the [MIT License](http://opensource.org/licenses/MIT).
+
+
+[JQuery](http://jquery.com/). A cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
 
 
 
