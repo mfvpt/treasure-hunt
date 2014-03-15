@@ -60,20 +60,18 @@ function create() {
 
 	//Adiciona Super Carlos
     player = game.add.sprite(350, 400, 'mossiano');
-    player.body.bounce.y = 0.2;
-    player.body.minVelocity.y = 5;
-    player.body.collideWorldBounds = true;
+    player.body.bounce.y = 0.1;
+    player.body.minVelocity.y = 4;
     player.body.setRectangle(16, 32, 8, 16);
+    player.body.collideWorldBounds = true;
 	//movimentos do herói
-    player.animations.add('left', [0, 1, 2, 3], 10, true);
-    player.animations.add('turn', [4], 20, true);
-    player.animations.add('right', [5, 6, 7, 8], 10, true);
+    player.animations.add('esquerda', [0, 1, 2, 3], 10, true);
+    player.animations.add('virar', [4], 20, true);
+    player.animations.add('direita', [5, 6, 7, 8], 10, true);
 	//modo segue herói
     game.camera.follow(player);
 
-	//salta-se com o espaço
     cursors = game.input.keyboard.createCursorKeys();
-    //jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 	jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.UP);
 	
 	//Estrelas MOSS
@@ -81,8 +79,8 @@ function create() {
 	
 	for (var i = 0; i < 10; i++)
 	{
-		//Espaçadas por 83 pixeis
-		var star = stars.create(i * 83, 0, 'star');
+		//Espaçadas por 80 pixeis
+		var star = stars.create((i * 80) + 20, 0, 'star');
 		star.body.gravity.y = 6;
 		star.body.bounce.y = 0.7 + Math.random() * 0.2;
 	}
@@ -103,7 +101,7 @@ function update() {
 	//física
 	game.physics.collide(player, layer);		
 	game.physics.collide(stars, layer);		
-	game.physics.overlap(player, stars, collectStar, null, this);
+	game.physics.overlap(player, stars, collectMOSS, null, this);
 	player.body.velocity.x = 0;
 
 	//a jogar
@@ -117,31 +115,31 @@ function update() {
 		{
 			player.body.velocity.x = -150;
 
-			if (facing != 'left')
+			if (facing != 'esquerda')
 			{
-				player.animations.play('left');
-				facing = 'left';
+				player.animations.play('esquerda');
+				facing = 'esquerda';
 			}
 		}
 		else if (cursors.right.isDown)
 		{
 			player.body.velocity.x = 150;
 
-			if (facing != 'right')
+			if (facing != 'direita')
 			{
-				player.animations.play('right');
-				facing = 'right';
+				player.animations.play('direita');
+				facing = 'direita';
 			}
 		}
 		else
 		{
-			if (facing != 'idle')
+			if (facing != 'parado')
 			{
 				player.animations.stop();
 
 				player.frame = 4;
 				
-				facing = 'idle';
+				facing = 'parado';
 			}
 		}
 		//saltar
@@ -158,7 +156,7 @@ function update() {
 	} 
 }
 
-function collectStar (player, star) {
+function collectMOSS (player, star) {
 
 	//apaga estrela MOSS
 	star.kill();
