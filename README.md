@@ -5,7 +5,12 @@ Treasure Hunt Game using HTML + CSS + JavaScript
 
 
 A simple game that explores the capabilities of HTML5 combined with JavaScript.
+
+
 The goal is to catch all the MOSS coins fast as you can.
+
+
+Use of HTML5, CSS3, Json and JavaScript.
 
 
 JavaScript Framework:
