@@ -1,4 +1,4 @@
-MOSS Treasure Hunt
+MOSS Treasure Hunt v1.0
 ============
 
 Treasure Hunt Game using HTML + CSS + JavaScript
